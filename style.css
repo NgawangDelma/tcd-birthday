@@ -917,3 +917,28 @@ body {
   20% { transform: scale(0.7); }
   30%, 100% { transform: scale(1); }
 }
+
+/* ✅ Show letter content immediately (no waiting for hover) */
+.boxMail.active .boxMail-container .card2 h3,
+.boxMail.active .boxMail-container .card2 h2{
+  opacity: 1 !important;
+  visibility: visible !important;
+  animation: none !important;
+}
+
+/* Remove the "slide-in" padding animation effect */
+.boxMail.active .boxMail-container .card2 h3{
+  padding: 20px 0px 10px 120px !important; /* final position */
+}
+
+/* Make sure the paragraph is visible */
+.boxMail.active .boxMail-container .card2 h2{
+  opacity: 1 !important;
+}
+
+/* Optional: stop the extra hover translate effect inside the letter */
+.boxMail.active .boxMail-container .card2-content{
+  transform: none !important;
+  box-shadow: none !important;
+}
+
