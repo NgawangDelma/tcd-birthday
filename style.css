@@ -942,3 +942,26 @@ body {
   box-shadow: none !important;
 }
 
+/* ===== SHOW LETTER CONTENT IMMEDIATELY (no hover / no animation) ===== */
+.boxMail .boxMail-container .card2 h3,
+.boxMail .boxMail-container .card2 h2,
+.boxMail .boxMail-container .card2 .imageCute2 {
+  opacity: 1 !important;
+  visibility: visible !important;
+  animation: none !important;
+  transition: none !important;
+}
+
+/* stop hover-triggered animations from running */
+.boxMail .boxMail-container .card2:hover h3,
+.boxMail .boxMail-container .card2:hover h2,
+.boxMail .boxMail-container .card2 .card2-content:hover .imageCute2 {
+  animation: none !important;
+}
+
+/* keep the cute image in place (optional) */
+.boxMail .boxMail-container .card2 .card2-content .imageCute2 {
+  left: 16px !important;
+}
+
+
